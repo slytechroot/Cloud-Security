@@ -1,0 +1,5 @@
+while read p; do
+  echo $p, curl --silent -I -i http://$p | grep AmazonS3
+done < subdomains.txt
+
+  
