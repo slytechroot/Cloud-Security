@@ -2,4 +2,20 @@ while read p; do
   echo $p, curl --silent -I -i http://$p | grep AmazonS3
 done < subdomains.txt
 
-  
+#Uncover hidden relationships between domains and discover the cloud service behind them.
+https://dnscharts.hacklikeapornstar.com/
+
+#Use https://github.com/owasp-amass/amass to scan for systems.
+#https://cramppet.github.io/regulator/index.html
+
+amass enum -d <attacked domain> -passive -o res.txt
+or:
+amass enum -d <attacked domain> -active -o res.txt
+
+#Automated learning of regexes for DNS discovery 
+https://github.com/cramppet/regulator
+
+
+
+
+
